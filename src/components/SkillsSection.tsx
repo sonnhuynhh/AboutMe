@@ -104,21 +104,10 @@ export const SkillsSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* Progress Bar */}
-              <div>
-                <div className="flex justify-between items-center text-xs mb-1.5 font-mono">
-                  <span className="text-gray-400">Mastery</span>
-                  <span className="text-spring-400 font-bold">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-obsidian-950 h-2 rounded-full overflow-hidden border border-gray-800">
-                  <motion.div
-                    className="h-full bg-gradient-to-r from-spring-600 via-spring-400 to-cyan-400 rounded-full"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                  />
-                </div>
+              {/* Card Footer Tag */}
+              <div className="pt-3 border-t border-gray-800/60 flex items-center justify-between text-xs text-gray-500">
+                <span className="font-mono text-[11px] text-gray-400">Production Ready</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-spring-500"></span>
               </div>
 
             </motion.div>

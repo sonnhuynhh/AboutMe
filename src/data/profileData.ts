@@ -1,6 +1,6 @@
 export interface Skill {
   name: string;
-  level: number; // 1-100
+  level?: number;
   category: 'Core Backend' | 'Database & Caching' | 'Architecture & DevOps' | 'Tools & Web';
   iconName: string;
   description: string;

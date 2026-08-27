@@ -101,7 +101,7 @@ export const SpringTerminal: React.FC = () => {
               {PROFILE_DATA.skills.slice(0, 8).map((s) => (
                 <div key={s.name} className="bg-obsidian-900 p-2 rounded border border-gray-800 flex justify-between items-center">
                   <span className="text-white font-medium">{s.name}</span>
-                  <span className="text-spring-400 font-mono">{s.level}%</span>
+                  <span className="text-spring-400 font-mono text-[10px]">[{s.category}]</span>
                 </div>
               ))}
             </div>
